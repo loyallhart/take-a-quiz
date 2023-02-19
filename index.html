@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/js/script.js">
+
+    <title>Photography Quiz</title>
+</head>
+
+<body>
+    <header>
+        <!--Score will display in top left corner -->
+
+        <section id="scoreBoard"> 
+            <input type="button" value="View High Scores"></section>
+        </br> Score: <var id="score"></var>
+        </section>
+        
+        <!--Timer will display in the right corner-->
+
+        <section id="countdown">
+            Time Remaining: <span id="timer"></span>
+        </section>
+    </header>
+
+    <!--Home Page with quiz rules and start button-->
+    <main>
+        <section id="homePage"> 
+            <h1>Photography Quiz Challenge</h1>
+            <p>Try to answer the following photography related questions within the 60 second time limit. Keep in mind that incorrect answers will penalize your scoretime by five seconds. </p>
+        </br>
+        <button id="startBtn">Start Quiz</button>
+        </section>
+    </main>
+
+    <!--Quiz-->
+    <section id="quiz" >
+        <h2 id="question"></h2>
+        <!--answers-->
+        <ul>
+            <div id="choices">
+               <article> <button id="answerChoiceA"></button> </article>
+
+               <article> <button id="answerChoiceB"></button> </article>
+
+               <article> <button id="answerChoiceC"></button> </article>
+
+               <article> <button id="answerChoiceD"></button> </article>
+
+
+            </div>
+        </ul>
+    </section>
+</body>
+
+<section id="gameOver">
+    <h2>Game Over</h2>
+    Your Score: <var id="endScore"></var>
+</br>
+Initials: <input type="text" placeholder="initials" id=:initials>
+ </section>
+
+ <section id="highScores">
+     <h2>High Scores</h2>
+     <div id="topScores"></div>
+     <input type="button" value="Go Back" id="goBack">
+     <input type="button" id="clearHighScores" value="clear">
+ </section>
+
+<script src="assets/js/script.js"></script>
+
+</html>
