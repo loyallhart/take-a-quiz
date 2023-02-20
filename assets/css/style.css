@@ -1,0 +1,99 @@
+:root {
+    --background: #79B4A9;
+    --dark: #49416D;
+    --light: #FFFFFF;
+}
+
+* { font-family: 'Verdana', 'Arial', 'Tahoma', Serif;
+    max-width: 100%;
+
+}
+
+html {
+
+    background-color: var(--background);
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Verdana', 'Arial', 'Tahoma', Serif;
+    text-align: center;
+  }
+
+  header {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    color: var(--light) 
+    
+  }
+
+  #viewHS {
+    background-color: var(--background);
+    color: white;
+    width: auto;
+    border-radius: 5px;
+    height: 40px;
+    font-size: small;
+}
+
+  #score {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #homePage {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+
+  }
+
+button {
+    background-color: var(--dark);
+    color: var(--light);
+    width: auto;
+    border-radius: 15px;
+    height: 50px;
+    font-size: larger;
+  }
+
+#quiz {
+   display: flex;
+   justify-content: center;
+}
+
+#gameOver {
+   text-align: center;
+   color: var(--light);
+}
+
+#highScores {
+    text-align: center;
+   color: var(--light);
+}
+
+#goBack {
+    background-color: var(--background);
+    color: white;
+    width: auto;
+    border-radius: 5px;
+    height: 40px;
+    font-size: small;
+}
+
+#clearHighScores {
+    background-color: var(--background);
+    color: white;
+    width: auto;
+    border-radius: 5px;
+    height: 40px;
+    font-size: small;
+}
