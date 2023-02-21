@@ -48,4 +48,4 @@ The following shows a sample of the web application's appearance:
 
 ## Deployment 
 
-Deployed application can be found at 
+Deployed application can be found at https://loyallhart.github.io/take-a-quiz/
