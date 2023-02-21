@@ -247,7 +247,6 @@ function viewHighScores() {
     for (let k = 0; k < highScoresDisplay.length; k++) {
         output = output + " " + highScoresDisplay[k];
     }
-    console.log(highScoresDisplay);
     document.getElementById("highScoresDisplay").innerHTML = output;
     clearUp();
 }
