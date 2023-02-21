@@ -34,7 +34,7 @@
     <main>
         <section id="homePage"> 
             <h1>Photography Quiz Challenge</h1>
-            <p>Try to answer the following photography related questions within the 60 second time limit. Keep in mind that incorrect answers will penalize your scoretime by five seconds. </p>
+            <p>Try to answer the following photography related questions within the 60 second time limit. Keep in mind that incorrect answers will penalize your scoretime by twelve seconds. </p>
         </br>
         <button id="startBtn">Start Quiz</button>
         </section>
@@ -42,7 +42,7 @@
 
     <!--Quiz-->
     <section id="quiz" style="display: none">
-        <h2 id="question"></h2>
+        <h2 id="question" style="color: white"></h2>
         <!--answers-->
         <ul>
             <div id="choices">
@@ -54,24 +54,29 @@
 
                <article> <button id="answerChoiceD"></button> </article>
 
-
             </div>
         </ul>
     </section>
+
+    <section id="answerResponse"></section>
 </body>
+
+<section id="answerResponse"></section>
 
 <section id="gameOver" style="display: none">
     <h2>Game Over</h2>
     Your Score: <var id="endScore"></var>
 </br>
-Initials: <input type="text" placeholder="initials" id=:initials>
+Initials: <input type="text" placeholder="initials" id="initials">
+</br>
+<input type="button" value="submit" id="submitIntials" onclick="submitScore()">
  </section>
 
- <section id="highScores" style="display: none">
+ <section id="highScoresPage" style="display: none">
      <h2>High Scores</h2>
-     <div id="topScores"></div>
-     <input type="button" value="Go Back" id="goBack">
-     <input type="button" id="clearHighScores" value="clear">
+     <div id="highScoresDisplay"></div>
+     <input type="button" value="Go Back" id="goBack" onclick="goHome()">
+     <input type="button" id="clearTopScores" value="clear" onclick="clearTopScores()">
  </section>
 
 <script src="assets/js/script.js"></script>

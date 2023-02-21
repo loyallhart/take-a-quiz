@@ -89,11 +89,15 @@ button {
     font-size: small;
 }
 
-#clearHighScores {
+#clearTopScores {
     background-color: var(--background);
     color: white;
     width: auto;
     border-radius: 5px;
     height: 40px;
     font-size: small;
+}
+#highScoresPage {
+    color: white;
+    width: auto;
 }
