@@ -235,6 +235,11 @@ function returnQuiz() {
 function submitScore() {
     highScoresDisplay.push(document.getElementById("initials").value + " " + score);
     viewHighScores();
+
+    let highScoresSerialized = JSON.stringify( highScoresDisplay);
+
+    localStorage.setItem("score",highScoresSerialized);
+    localStorage.getItem("score",highScoresSerialized);
 }
 
 //highScores
